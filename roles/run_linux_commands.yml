@@ -1,0 +1,7 @@
+---
+- Name: Run malicious commands
+  shell: '{{ item }}'
+  async: 45
+  poll: 0
+  with_lines:
+    - cat "commands/linux_commands"

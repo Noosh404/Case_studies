@@ -1,27 +1,45 @@
+###############LINUX#################
 [team1_linux:vars]
-ansible_connection=ssh
-ansible_ssh_user=jrichards
-ansible_ssh_pass="P1#abridged"
+ansible_ssh_user=test
+ansible_ssh_pass="karolek@12"
 
 [team2_linux:vars]
-ansible_connection=ssh
 ansible_ssh_user=ccole
 ansible_ssh_pass="P1#tramways"
 
 [team3_linux:vars]
-ansible_connection=ssh
 ansible_ssh_user=abanks
 ansible_ssh_pass="P1#glassful"
 
 [team4_linux:vars]
-ansible_connection=ssh
 ansible_ssh_user=breed
 ansible_ssh_pass="P1#diabetes"
 
 [team5_linux:vars]
-ansible_connection=ssh
 ansible_ssh_user=mharvey
 ansible_ssh_pass="P1#luckiest"
+
+################WINDOWS###################
+[team1_windows:vars]
+ansible_user=jrichards
+ansible_password="P1#abridged"
+
+[team2_windows:vars]
+ansible_user=ccole
+ansible_password="P1#tramways"
+
+[team3_windows:vars]
+ansible_user=abanks
+ansible_password="P1#glassful"
+
+[team4_windows:vars]
+ansible_user=breed
+ansible_password="P1#diabetes"
+
+[team5_windows:vars]
+ansible_user=mharvey
+ansible_password="P1#luckiest"
+
 
 [all:children]
 
@@ -55,7 +73,10 @@ team4_windows
 team5_linux
 team5_windows
 
-[team1_linux]
+[team7_linux]
+192.168.98.137
+
+[team7_linux]
 10.1.27.165
 10.1.27.39
 10.1.84.89
