@@ -1,8 +1,9 @@
-###############LINUX#################
 [team1_linux:vars]
-ansible_ssh_user=test
-ansible_ssh_pass="karolek@12"
+ansible_ssh_user=palvarez
+ansible_ssh_pass=""
 
+# ansible_ssh_user=firefart
+# ansible_ssh_pass="Password1!"
 [team2_linux:vars]
 ansible_ssh_user=ccole
 ansible_ssh_pass="P1#tramways"
@@ -19,7 +20,6 @@ ansible_ssh_pass="P1#diabetes"
 ansible_ssh_user=mharvey
 ansible_ssh_pass="P1#luckiest"
 
-################WINDOWS###################
 [team1_windows:vars]
 ansible_user=jrichards
 ansible_password="P1#abridged"
