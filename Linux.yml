@@ -1,0 +1,3 @@
+- hosts: team1_linux
+  tasks:
+    - import_tasks: roles/run_linux_commands.yml
