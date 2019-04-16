@@ -1,5 +1,5 @@
 ---
-- hosts: team3_linux
+- hosts: team1_linux
   connection: local
   gather_facts: false
   tasks:
