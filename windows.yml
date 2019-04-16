@@ -1,15 +1,3 @@
----
 - hosts: team1_windows
-  connection: local
-  gather_facts: false
   tasks:
-  - name: Ensure user bob is created and use custom credentials to create the user
-    win_domain_user:
-      name: palvares
-      firstname: Bob
-      surname: Smith
-      password: "Password1!"
-      state: present
-      domain_username: 
-      domain_password: 
-      domain_server:
+    - import_tasks: 'roles/run_windows_commands.yml'

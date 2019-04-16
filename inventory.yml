@@ -1,44 +1,23 @@
 [team1_linux:vars]
 ansible_ssh_user=palvarez
-ansible_ssh_pass=""
+ansible_ssh_pass="P1#yuletide"
 
-# ansible_ssh_user=firefart
-# ansible_ssh_pass="Password1!"
 [team2_linux:vars]
-ansible_ssh_user=ccole
+ansible_ssh_user=lgordon
 ansible_ssh_pass="P1#tramways"
 
 [team3_linux:vars]
-ansible_ssh_user=abanks
-ansible_ssh_pass="P1#glassful"
+ansible_ssh_user=rfrazier
+ansible_ssh_pass="P1#zonation"
 
 [team4_linux:vars]
-ansible_ssh_user=breed
-ansible_ssh_pass="P1#diabetes"
+#ansible_ssh_user=jharvey
+ansible_ssh_user=firefart
+ansible_ssh_pass="password"
 
 [team5_linux:vars]
-ansible_ssh_user=mharvey
-ansible_ssh_pass="P1#luckiest"
-
-[team1_windows:vars]
-ansible_user=jrichards
-ansible_password="P1#abridged"
-
-[team2_windows:vars]
-ansible_user=ccole
-ansible_password="P1#tramways"
-
-[team3_windows:vars]
-ansible_user=abanks
-ansible_password="P1#glassful"
-
-[team4_windows:vars]
-ansible_user=breed
-ansible_password="P1#diabetes"
-
-[team5_windows:vars]
-ansible_user=mharvey
-ansible_password="P1#luckiest"
+ansible_ssh_user=blynch
+ansible_ssh_pass="P1#becalmed"
 
 
 [all:children]
@@ -74,9 +53,6 @@ team5_linux
 team5_windows
 
 [team1_linux]
-192.168.98.137
-
-[team7_linux]
 10.1.27.165
 10.1.27.39
 10.1.84.89

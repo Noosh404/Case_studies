@@ -8,7 +8,7 @@
     type: 'string'
 
 # Run malicious commands
-- Name: Run malicious commands
+- name: Run malicious commands
   win_shell: '{{ item }}'
   async: 45
   poll: 0

